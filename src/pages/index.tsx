@@ -77,64 +77,64 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
         {/* Banner */}
         <Banner />
 
-        <section className="pt-6 bg-white">
+        <section className="p-6 bg-white">
           <div className="max-w-2xl mx-auto mt-16 mb-16 text-center" id="destinations">
             <span className="font-bold tracking-wider uppercase dark:text-violet-400  items-center justify-items-center "></span>
             <h2 className="text-4xl font-light lg:text-5xl  items-center justify-items-center ">Feel the <span className="font-bold">best experiences</span> with <span className="font-bold">our features</span></h2>
           </div>
           <div className="flex flex-wrap justify-center gap-y-10 min-h-[80vh] md:min-h-[50vh] gap-x-2">
                 <div className="flex flex-col justify-center items-center gap-y-6 2xl:w-[47%]">
-                  <section className="my-8 bg-gray-100 text-gray-900 rounded-xl">
+                  <section className="my-4 bg-gray-100 text-gray-900 rounded-xl">
                     <div className="container flex flex-col items-start p-4 mx-auto space-y-6 md:p-8">
-                      <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
-                      <p className="pl-4 py-2 text-1xl font-semibold text-center sm:font-bold sm:text-3xl md:text-2xl lg:max-w-2xl xl:max-w-2xl dark:text-gray-900">Personal Wallet for your transactions</p>
-                      <p className="pl-4 py-2 text-1xl sm:text-xl md:text-xl lg:max-w-xl xl:max-w-xl dark:text-gray-900">Your personal financial hub designed for seamless management of your financial assets</p>
+                      <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                      <p className="pl-4 py-0 text-1xl font-semibold text-center sm:font-bold sm:text-3xl md:text-2xl lg:max-w-2xl xl:max-w-2xl dark:text-gray-900">Personal Wallet for your transactions</p>
+                      <p className="pl-4 py-0 text-md sm:text-md md:text-md lg:max-w-xl xl:max-w-xl dark:text-gray-900">Your personal financial hub designed for seamless management of your financial assets</p>
                       <div className="flex justify-center space-x-3">
-                      <ul className="mt-8 gap-6 space-y-2">
+                      <ul className="mt-2 gap-4 space-y-2">
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Most Popular Crypto Wallets</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Most Popular Crypto Wallets</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">USD $ EUR Accounts</p>
+                            <p className="leading-3 text-md font-semibold uppercase">USD $ EUR Accounts</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Create Virtual Cards</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Create Virtual Cards</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Transaction Statistics</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Transaction Statistics</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Generate Invoices</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Generate Invoices</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Withdrawal to crypto account</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Withdrawal to crypto account</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
@@ -144,57 +144,57 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                   </section>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-y-6 2xl:w-[47%]">
-                  <section className="my-8 bg-gray-100 text-gray-900 rounded-xl">
+                  <section className="my-4 bg-gray-100 text-gray-900 rounded-xl">
                     <div className="container flex flex-col items-start p-4 mx-auto space-y-6 md:p-8">
-                      <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
-                      <p className="pl-4 py-2 text-1xl font-semibold text-center sm:font-bold sm:text-3xl md:text-2xl lg:max-w-2xl xl:max-w-2xl dark:text-gray-900">Card Management with team wallet</p>
-                      <p className="pl-4 py-2 text-1xl sm:text-xl md:text-xl lg:max-w-xl xl:max-w-xl dark:text-gray-900">Empower your team with collaborative financial tools within a dedicated team environment</p>
-                      <div className="flex justify-center space-x-3">
-                      <ul className="mt-8 gap-6 space-y-2">
+                      <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                      <p className="pl-4 py-0 text-1xl font-semibold text-center sm:font-bold sm:text-3xl md:text-2xl lg:max-w-2xl xl:max-w-2xl dark:text-gray-900">Card Management with team wallet</p>
+                      <p className="pl-4 py-0 text-md sm:text-md md:text-md lg:max-w-xl xl:max-w-xl dark:text-gray-900">Empower your team with collaborative financial tools within a dedicated team environment</p>
+                      <div className="flex justify-center space-x-2">
+                      <ul className="mt-2 gap-4 space-y-2">
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Create Team</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Create Team</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Complete management of the team</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Complete management of the team</p>
+                            <p className="text-sm leading-3 dark:text-gray-300"></p>
+                          </div>
+                        </li>
+
+                        <li className="flex space-x-2 items-center"> 
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <div>
+                            <p className="leading-3 text-md font-semibold uppercase">Create Virtual Cards</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Create Virtual Cards</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Transaction Statistics</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Transaction Statistics</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Generate Invoices</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
                           <div>
-                            <p className="leadi font-bold">Generate Invoices</p>
-                            <p className="text-sm leadi dark:text-gray-300"></p>
-                          </div>
-                        </li>
-
-                        <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-20 h-20 bg-center bg-cover rounded-full dark:bg-yellow-500" />
-                          <div>
-                            <p className="leadi font-bold">Detail statistics of your team and its members</p>
+                            <p className="leading-3 text-md font-semibold uppercase">Detail statistics of your team and its members</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
                           </div>
                         </li>
