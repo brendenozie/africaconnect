@@ -18,6 +18,10 @@ const chartConfig = {
       name: "Expenditure",
       data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
     },
+    {
+        name: "Income",
+        data: [30, 20, 100, 620, 1500, 200, 700, 1230, 5000],
+      },
   ],
   options: {
     chart: {
@@ -31,7 +35,7 @@ const chartConfig = {
     dataLabels: {
       enabled: false,
     },
-    colors: ["#020617"],
+    colors: ["#020617","#ea0c0c"],
     stroke: {
       lineCap: "round",
       curve: "smooth",
@@ -126,8 +130,8 @@ const Dash = (props: Props) => {
                                                     <div className="flex justify-between">                                                        
                                                             <div className="mt-1 text-xl font-bold leading-8">Ksh 45.10</div>
                                                             <div
-                                                                className="bg-green-300 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
-                                                                <span className="flex items-center text-green-700">10%</span>
+                                                                className="bg-yellow-300 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
+                                                                <span className="flex items-center text-yellow-700">10%</span>
                                                             </div>                                                            
                                                     </div>
                                                 </div>
@@ -142,8 +146,8 @@ const Dash = (props: Props) => {
                                                     <div className="flex justify-between">                                                        
                                                             <div className="mt-1 text-xl font-bold leading-8">Ksh 2.300</div>
                                                             <div
-                                                                className="bg-green-300 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
-                                                                <span className="flex items-center text-green-700">12%</span>
+                                                                className="bg-yellow-300 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
+                                                                <span className="flex items-center text-yellow-700">12%</span>
                                                             </div>                                                            
                                                     </div>
                                                 </div>
@@ -234,7 +238,7 @@ const Dash = (props: Props) => {
                                                                                 </td>
                                                                                 <td
                                                                                     className="px-6 py-4 whitespace-no-wrap text-sm leading-5">
-                                                                                    <div className="flex text-green-500">
+                                                                                    <div className="flex text-yellow-500">
                                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                                             className="w-5 h-5 mr-1" fill="none"
                                                                                             viewBox="0 0 24 24"
@@ -303,7 +307,7 @@ const Dash = (props: Props) => {
                                                                                 </td>
                                                                                 <td
                                                                                     className="px-6 py-4 whitespace-no-wrap text-sm leading-5">
-                                                                                    <div className="flex text-green-500">
+                                                                                    <div className="flex text-yellow-500">
                                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                                             className="w-5 h-5 mr-1" fill="none"
                                                                                             viewBox="0 0 24 24"
@@ -372,7 +376,7 @@ const Dash = (props: Props) => {
                                                                                 </td>
                                                                                 <td
                                                                                     className="px-6 py-4 whitespace-no-wrap text-sm leading-5">
-                                                                                    <div className="flex text-green-500">
+                                                                                    <div className="flex text-yellow-500">
                                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                                             className="w-5 h-5 mr-1" fill="none"
                                                                                             viewBox="0 0 24 24"
@@ -441,7 +445,7 @@ const Dash = (props: Props) => {
                                                                                 </td>
                                                                                 <td
                                                                                     className="px-6 py-4 whitespace-no-wrap text-sm leading-5">
-                                                                                    <div className="flex text-green-500">
+                                                                                    <div className="flex text-yellow-500">
                                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                                             className="w-5 h-5 mr-1" fill="none"
                                                                                             viewBox="0 0 24 24"
@@ -566,7 +570,7 @@ const Dash = (props: Props) => {
                                         <div className="mt-1 text-sm font-semibold leading-8">Card Holder</div>                                                       
                                     </div>
                                     <div className="flex justify-between">                                                        
-                                            <div className="text-sm font-semibold leading-8 text-gray-500">John Smith</div>                                                
+                                            <div className="text-sm font-semibold leading-8 text-gray-500">John Doe</div>                                                
                                     </div>
                                 </div>
                                 <div className="pt-1 px-5">

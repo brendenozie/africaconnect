@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import pg24 from "../../public/pg2-4.jpg";
+import pg24 from "../../public/21.png";
 
 import {GlobeAsiaAustraliaIcon,UserGroupIcon,WindowIcon } from "@heroicons/react/24/solid";
 
@@ -21,7 +21,7 @@ const Second = () => {
           <div className="flex flex-wrap gap-y-6 gap-x-6">
             
             <div className="w-full md:w-[45%]  box-border">
-              <div className="bg-[url('/pg2-2.jpg')] h-[20rem] w-full bg-cover bg-center shadow-2xl sm:h-3/4 lg:h-[100%] lg:h-[90%] relative">
+              <div className="bg-[url('/21.png')] h-[20rem] w-full bg-cover bg-center shadow-2xl sm:h-3/4 lg:h-[100%] lg:h-[90%] relative">
                 <div className="absolute -bottom-4 -right-4 shadow-2xl border-8 border-gray-200">
                   <Image src={pg24} alt="" width={200} height={50} loader={loaderProp}/>
                 </div>
@@ -63,7 +63,7 @@ const Second = () => {
               <div className="flex gap-x-4">
                 <Link
                   href="#"
-                  className="px-4 py-[0.6rem] py-3 px-6 text-orange-600 transition-all duration-300 uppercase"
+                  className="px-4 py-[0.6rem] py-3 px-6 text-orange-600 transition-all duration-300 uppercase font-semibold"
                 >
                   learn more
                 </Link>
@@ -73,7 +73,7 @@ const Second = () => {
 
             
             <div className="w-full md:w-[45%]  box-border">
-              <div className="bg-[url('/pg2-2.jpg')] h-[20rem] w-full bg-cover bg-center shadow-2xl sm:h-3/4 lg:h-[100%] lg:h-[90%] relative">
+              <div className="bg-[url('/21.png')] h-[20rem] w-full bg-cover bg-center shadow-2xl sm:h-3/4 lg:h-[100%] lg:h-[90%] relative">
                 <div className="absolute -bottom-4 -right-4 shadow-2xl border-8 border-gray-200">
                   <Image src={pg24} alt="" width={200} height={50} loader={loaderProp}/>
                 </div>

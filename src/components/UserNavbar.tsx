@@ -41,7 +41,7 @@ const UserNavbar = () => {
                             {/* <!-- Notifications menu --> */}
                             <li className="relative">
                                 <button
-                                    className="p-2 bg-white text-red-400 align-middle rounded-full hover:text-white hover:bg-green-400 focus:outline-none "
+                                    className="p-2 bg-white text-red-400 align-middle rounded-full hover:text-white hover:bg-yellow-400 focus:outline-none "
                                     
                                     aria-label="Notifications" aria-haspopup="true">
                                         {/* @click="toggleNotificationsMenu" @keydown.escape="closeNotificationsMenu" */}
@@ -56,12 +56,12 @@ const UserNavbar = () => {
                                     <span aria-hidden="true"
                                         className="absolute top-0 right-0 inline-block w-3 h-3 transform translate-x-1 -translate-y-1 bg-red-600 border-2 border-white rounded-full dark:border-gray-800"></span>
                                 </button>
-                                <template x-if="isProfileMenuOpen">
-                                    <ul className="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-green-400 border border-green-500 rounded-md shadow-md">
+                                {/* <template x-if="isProfileMenuOpen">
+                                    <ul className="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-yellow-400 border border-yellow-500 rounded-md shadow-md">
                                           
-                                    {/* // x-transition:leave="transition ease-in duration-150"
+                                    // x-transition:leave="transition ease-in duration-150"
                                     //     x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
-                                        // @click.away="closeNotificationsMenu" @keydown.escape="closeNotificationsMenu" */}
+                                        // @click.away="closeNotificationsMenu" @keydown.escape="closeNotificationsMenu"
                                         <li className="flex">
                                             <a className="text-white inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800"
                                                 href="#">
@@ -73,17 +73,17 @@ const UserNavbar = () => {
                                             </a>
                                         </li>
                                     </ul>
-                                </template>
+                                </template> */}
                             </li>
 
                             {/* <!-- Profile menu --> */}
-                            <li className="relative">
+                            {/* <li className="relative">
                                 <button
-                                    className="p-2 bg-white text-blue-400 align-middle rounded-full hover:text-white hover:bg-green-400 focus:outline-none "
+                                    className="p-2 bg-white text-blue-400 align-middle rounded-full hover:text-white hover:bg-yellow-400 focus:outline-none "
                                     aria-label="Account"
                                     aria-haspopup="true">
                                         {/* @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" */}
-                                    <div className="flex items-center">
+                                    {/* <div className="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -95,13 +95,13 @@ const UserNavbar = () => {
                                 </button>
                                 <template x-if="isProfileMenuOpen">
                                     <ul                                         
-                                        className="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-green-400 border border-green-500 rounded-md shadow-md"
-                                        aria-label="submenu">
+                                        className="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-yellow-400 border border-yellow-500 rounded-md shadow-md"
+                                        aria-label="submenu"> */}
                                           
                                     {/* // x-transition:leave="transition ease-in duration-150"
                                     //     x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" */}
                                             {/* @click.away="closeProfileMenu" @keydown.escape="closeProfileMenu" */}
-                                        <li className="flex">
+                                        {/* <li className="flex">
                                             <a className=" text-white inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800"
                                                 href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 mr-2" fill="none"
@@ -124,8 +124,8 @@ const UserNavbar = () => {
                                             </a>
                                         </li>
                                     </ul>
-                                </template>
-                            </li>
+                                </template> */}
+                            {/* </li> */}
                         </ul>
 
                     </div>

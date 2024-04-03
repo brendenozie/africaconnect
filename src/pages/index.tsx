@@ -9,19 +9,19 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LargeCard from "../components/LargeCard";
 import SmallCard from "../components/SmallCard";
-import { ICity, ITravelStyle } from "../types/typings";
+import { ICity, IfinanceStyle } from "../types/typings";
 import Desc from "@/components/Desc";
 import Second from "@/components/Second";
 import Testi from "@/components/Testi";
 import Pic from "@/components/Pic";
 import { GetServerSidePropsContext } from "next";
 import axios from "axios";
-
-import traveldisc from "../../public/get-inspired1200x600.jpg";
+import { Bars3Icon, BookmarkIcon, CreditCardIcon, CurrencyPoundIcon, DocumentIcon, DocumentTextIcon, NewspaperIcon, PencilSquareIcon, Square3Stack3DIcon, UserGroupIcon, UserPlusIcon, WalletIcon } from "@heroicons/react/24/outline";
+import financedisc from "../../public/get-inspired1200x600.jpg";
 
 type Props = {
   citiesData: {results:ICity[]};
-  stylesData: {results:ITravelStyle[]};
+  stylesData: {results:IfinanceStyle[]};
   getInspiredCities: ICity[];
 };
 
@@ -46,7 +46,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
     
     let url = process.env.NEXT_PUBLIC_API_URL;
 
-    await axios.post(url+`/post-travel-style`, {fname:fname,lname:lname,email:email,phone:phone,company:company,message:message,}).then(() => {
+    await axios.post(url+`/post-finance-style`, {fname:fname,lname:lname,email:email,phone:phone,company:company,message:message,}).then(() => {
             setFname("");
             setLname("");
             setEmail("");
@@ -86,13 +86,13 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                 <div className="flex flex-col justify-center items-center gap-y-6 2xl:w-[47%]">
                   <section className="my-4 bg-gray-100 text-gray-900 rounded-xl">
                     <div className="container flex flex-col items-start p-4 mx-auto space-y-6 md:p-8">
-                      <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                        <WalletIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />                        
                       <p className="pl-4 py-0 text-1xl font-semibold text-center sm:font-bold sm:text-3xl md:text-2xl lg:max-w-2xl xl:max-w-2xl dark:text-gray-900">Personal Wallet for your transactions</p>
                       <p className="pl-4 py-0 text-md sm:text-md md:text-md lg:max-w-xl xl:max-w-xl dark:text-gray-900">Your personal financial hub designed for seamless management of your financial assets</p>
                       <div className="flex justify-center space-x-3">
                       <ul className="mt-2 gap-4 space-y-2">
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <CurrencyPoundIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Most Popular Crypto Wallets</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -100,7 +100,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <WalletIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">USD $ EUR Accounts</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -108,7 +108,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <CreditCardIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Create Virtual Cards</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -116,7 +116,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <WalletIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Transaction Statistics</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -124,7 +124,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <DocumentIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Generate Invoices</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -132,7 +132,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <WalletIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Withdrawal to crypto account</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -146,13 +146,13 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                 <div className="flex flex-col justify-center items-center gap-y-6 2xl:w-[47%]">
                   <section className="my-4 bg-gray-100 text-gray-900 rounded-xl">
                     <div className="container flex flex-col items-start p-4 mx-auto space-y-6 md:p-8">
-                      <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                      <UserPlusIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                       <p className="pl-4 py-0 text-1xl font-semibold text-center sm:font-bold sm:text-3xl md:text-2xl lg:max-w-2xl xl:max-w-2xl dark:text-gray-900">Card Management with team wallet</p>
                       <p className="pl-4 py-0 text-md sm:text-md md:text-md lg:max-w-xl xl:max-w-xl dark:text-gray-900">Empower your team with collaborative financial tools within a dedicated team environment</p>
                       <div className="flex justify-center space-x-2">
                       <ul className="mt-2 gap-4 space-y-2">
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <UserGroupIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Create Team</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -160,7 +160,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <PencilSquareIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Complete management of the team</p>
                             <p className="text-sm leading-3 dark:text-gray-300"></p>
@@ -168,7 +168,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <CreditCardIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Create Virtual Cards</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -176,7 +176,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <NewspaperIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Transaction Statistics</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -184,7 +184,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <DocumentTextIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Generate Invoices</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -192,7 +192,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                         </li>
 
                         <li className="flex space-x-2 items-center"> 
-                          <img src="/avatar.png" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500" />
+                          <WalletIcon className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-yellow-500 p-2" />   
                           <div>
                             <p className="leading-3 text-md font-semibold uppercase">Detail statistics of your team and its members</p>
                             <p className="text-sm leadi dark:text-gray-300"></p>
@@ -216,8 +216,8 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
           
           <img
             alt="Student"
-            src="/21.jpg"
-            className="h-56 w-full object-cover sm:h-full"
+            src="/41.png"
+            className="h-56 w-full object-cover sm:h-full rounded-xl"
           />
         </section>
 
@@ -230,18 +230,18 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
               </h2>
 
               <p className="hidden text-gray-500 md:mt-4 md:block">
-                Travel allows us to enjoy complete anonymity in new and unexplored territories.
+                finance allows us to enjoy complete anonymity in new and unexplored territories.
                 It gives us absolute freedom to live in the moment and it allows us to be anyone,
                 to go anywhere and to do anything. The best part of my six-month trip around the world,
                 way back when, was the freedom of being able to just wake up and pick a spot anywhere on the map and
-                find a way to get there. Travel enables us to be spontaneous and seek new experiences.
+                find a way to get there. finance enables us to be spontaneous and seek new experiences.
               </p>
 
-              <div className="flex mt-4 md:mt-8 gap-x-2 items-center">
-                <Link href="#" className="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400" >
+              <div className="flex mt-4 md:mt-8 gap-x-2 items-center justify-center">
+                <Link href="#" className="inline-block rounded bg-yellow-400 px-12 py-3 text-sm font-medium text-black transition hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-yellow-400" >
                   Playstore
                 </Link>
-                <Link href="#" className="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400" >
+                <Link href="#" className="inline-block rounded bg-yellow-400 px-12 py-3 text-sm font-medium text-black transition hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-yellow-400" >
                   Appstore
                 </Link>
               </div>
@@ -250,62 +250,14 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
 
           <img
             alt="Student"
-            src="/21.jpg"
+            src="/21.png"
             className="h-56 w-full object-cover sm:h-full"
           />
         </section>
 
-        <section className="py-6 dark:text-gray-50">
-          <div className="container grid grid-cols-2 gap-4 mx-auto md:grid-cols-4">
-            <img src="/34.jpg" alt="" className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square" />
-            <img src="/35.jpg" alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" />
-            <img src="/37.jpg" alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" />
-            <img src="/pg2-2.jpg" alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" />
-            <img src="/36.jpg" alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" />
-          </div>
-        </section>
+       
 
-        {/* <LargeCard
-          img={traveldisc}
-          title="Discover New Destinations"
-          description="Curated by our Travel Experts"
-          buttonText="Get Inspired"
-          getInspiredCities={getInspiredCities}
-          setSearchInput={setSearchInput}
-          setSelectedCity={setSelectedCity}
-        /> */}
-
-        <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
-          <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-            <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-              <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-                Reserve your spot today!
-              </h2>
-
-              <p className="hidden text-gray-500 md:mt-4 md:block">
-                Travel allows us to enjoy complete anonymity in new and unexplored territories.
-                It gives us absolute freedom to live in the moment and it allows us to be anyone,
-                to go anywhere and to do anything. The best part of my six-month trip around the world,
-                way back when, was the freedom of being able to just wake up and pick a spot anywhere on the map and
-                find a way to get there. Travel enables us to be spontaneous and seek new experiences.
-              </p>
-
-              <div className="mt-4 md:mt-8">
-                <Link href="#" className="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400" >
-                  Book Today
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <img
-            alt="Student"
-            src="/21.jpg"
-            className="h-56 w-full object-cover sm:h-full"
-          />
-        </section>
-
-        <section id="contact" className="py-24 lg:py-36 bg-white overflow-hidden">
+        <section id="contact" className="py-24 lg:py-36 bg-white overflow-hidden px-8">
           <div className="container px-4 mx-auto">
             <div className="flex flex-wrap -m-8">
               <div className="w-full md:w-1/2 p-8">
@@ -316,9 +268,9 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                       <path d="M21 16C21 18.7614 18.7614 21 16 21C13.2386 21 11 18.7614 11 16C11 13.2386 13.2386 11 16 11C18.7614 11 21 13.2386 21 16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div>
-                  <h3 className="mb-6 text-3xl font-semibold" style={{ letterSpacing: "-0.5px" }}>&ldquo;At HobbyHorse we'll help you plan your trip effectively&amp; productively. Ensuring that you have a seamless holiday even as you travel with us touring all the places of interest !&rdquo;</h3>
-                  <h4 className="font-semibold tracking-tight mb-1">Sharon Akinyi</h4>
-                  <span>Founder, HobbyHorse.</span>
+                  <h3 className="mb-6 text-3xl font-semibold" style={{ letterSpacing: "-0.5px" }}>&ldquo;At AfricaConnect we'll help you plan your trip effectively&amp; productively. Ensuring that you have a seamless holiday even as you finance with us touring all the places of interest !&rdquo;</h3>
+                  <h4 className="font-semibold tracking-tight mb-1">C.E.O</h4>
+                  <span>Founder, AfricaConnect.</span>
                 </div>
               </div>
               <div className="w-full md:w-1/2 p-8">
@@ -354,7 +306,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
                     </label>
                   </div>
                   <div className="w-full p-3">
-                    <button className="inline-block mb-4 px-5 py-4 w-full text-white text-center font-semibold tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200" disabled={mail} onClick={sendMail}>Send Enquiry</button>
+                    <button className="inline-block mb-4 px-5 py-4 w-full text-black text-center font-semibold tracking-tight bg-yellow-400 hover:bg-yellow-400 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200" disabled={mail} onClick={sendMail}>Send Enquiry</button>
                     <span className="text-sm text-gray-600 tracking-tight">* We never share user details with third parties, period.</span>
                   </div>
                 </div>
@@ -365,7 +317,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
 
       </main>
 
-      <Pic />
+      {/* <Pic /> */}
 
       <Footer />
 
@@ -395,7 +347,7 @@ export const getServerSideProps = async (
 
   const citiesData = [{}];// await fetch(url+`/get-city`).then( (res) => res.json() );
 
-  const stylesData = [{}];//await fetch(url+`/get-travel-style`).then((res) => res.json());
+  const stylesData = [{}];//await fetch(url+`/get-finance-style`).then((res) => res.json());
 
   const getInspiredCities = [{}];//await fetch(url+`/get-city`).then((res) => res.json());
 
